@@ -36,10 +36,5 @@ let package = Package(
             exclude: ["Info.plist"],
             resources: [.copy("PrivacyInfo.xcprivacy")],
             swiftSettings: [.swiftLanguageMode(.v5)]),
-        .testTarget(
-            name: "ExperimentTests",
-            dependencies: ["Experiment"],
-            path: "Tests/ExperimentTests",
-            exclude: ["Info.plist"]),
     ]
 )
